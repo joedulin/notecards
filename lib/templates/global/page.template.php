@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<?php include('head.template.php'); ?>
+	<?php include('js-libraries.template.php'); ?>
 	<body>
 		<?php
-			echo '<div id="wrap">';
+			echo '<div id="wrap" style="margin-bottom: 2em;">';
 			if ($this->shownav) {
 				include('navbar.template.php');
 			}
@@ -17,8 +18,6 @@
 			}
 			include($page_content_file);
 			echo '</div></div>';
-			include('foot.template.php');
 		?>
 	</body>
-	<?php include('js-libraries.template.php'); ?>
 </html>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main_nav">
@@ -13,21 +13,14 @@
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="glyphicon glyphicon-phone-alt"></span>
-						<span>Numbers</span>
+						<span class="glyphicon glyphicon-th-list"></span>
+						<span>Projects</span>
 						<span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="/numbers">My Numbers</a></li>
-						<li><a href="/numbers/add">Add Numbers</a></li>
+					<ul class="dropdown-menu" role="menu" id="projects_menu">
 					</ul>
 				</li>
-				<li>
-					<a href="/ma/addresses">
-						<span class="glyphicon glyphicon-fire"></span>
-						<span>Addresses</span>
-					</a>
-				</li>
+				<li><p id="project_name" class="navbar-text"></p></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -41,6 +34,12 @@
 					</ul>
 				</li>
 			</ul>
+			<div class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" id="search" class="form-control disabled" placeholder="Search..">
+				</div>
+				<button type="button" id="search_submit" class="btn btn-default disabled">Search</button>
+			</div>
 		</div>
 	</div>
 </nav>

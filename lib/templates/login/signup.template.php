@@ -19,18 +19,6 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label class="control-label col-sm-4">Email Address</label>
-				<div class="col-sm-8">
-					<input type="email" id="email" class="form-control">
-				</div>
-			</div>
-			<div class="form-group">
-				<label class="control-label col-sm-4">Phone Number</label>
-				<div class="col-sm-8">
-					<input type="tel" id="phone" class="form-control">
-				</div>
-			</div>
-			<div class="form-group">
 				<div class="col-sm-8 col-sm-offset-4">
 					<button type="button" id="submit" class="btn btn-primary btn-block">Signup</button>
 					<button type="submit" id="fake_submit" style="display:none;">Fake Submit</button> <!-- So I have a button to "click" -->

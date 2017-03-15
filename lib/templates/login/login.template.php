@@ -34,6 +34,7 @@
 </div>
 
 <script>
+$(function () {
 	$('#login_button').click(check_login);
 	$('#password').keypress(function (e) {
 		if (e.which == 13) {
@@ -60,4 +61,5 @@
 			}
 		});
 	}
+});
 </script>

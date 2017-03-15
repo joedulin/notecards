@@ -1,7 +1,7 @@
 <?php
 
-DEFINE('PROJECT_NAME', 'Multialert 911');
-DEFINE('BASE_PATH', '/var/www/html/portal/');
+DEFINE('PROJECT_NAME', 'Notecards');
+DEFINE('BASE_PATH', '/var/www/html/notecards/');
 DEFINE('LIB_PATH', BASE_PATH . 'lib/');
 DEFINE('CONNECT_PATH', LIB_PATH . 'connect/');
 DEFINE('CONTROLLERS_PATH', LIB_PATH . 'controllers/');

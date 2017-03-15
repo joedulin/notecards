@@ -14,20 +14,25 @@ $f3->route('POST /login', 'LoginController->authenticate'); //ajax
 $f3->route('GET /logout', 'LoginController->login_page');
 $f3->route('GET /signup', 'LoginController->signup_page');
 $f3->route('POST /signup', 'LoginController->signup'); //ajax
+$f3->route('GET /forgot', 'LoginController->forgotpass_page');
 
 //Index Controller
 $f3->route('GET /', 'IndexController->landing_page');
 
-//Numbers Controller
-$f3->route('GET /numbers', 'NumbersController->numbers_page');
-$f3->route('POST /numbers/list', 'NumbersController->list_numbers'); //ajax
+//Projects Controller
+$f3->route('POST /projects/create', 'ProjectsController->create_project'); //ajax
+$f3->route('POST /projects/list', 'ProjectsController->list_projects'); //ajax
+$f3->route('POST /projects/remove', 'ProjectsController->remove_project'); //ajax
 
-//MA Controller
-$f3->route('GET /ma/addresses', 'MAController->addresses_page');
-$f3->route('POST /ma/addresses/create', 'MAController->create_group'); //ajax
-$f3->route('POST /ma/addresses/list', 'MAController->list_groups'); //ajax
-$f3->route('POST /ma/addresses/get', 'MAController->get_group'); //ajax
-$f3->route('POST /ma/addresses/modify', 'MAController->modify_group'); //ajax
-$f3->route('POST /ma/addresses/remove', 'MAController->remove_group'); //ajax
+//Card Controller
+$f3->route('POST /cards/create', 'CardsController->create_card'); //ajax
+$f3->route('POST /cards/list', 'CardsController->list_cards'); //ajax
+$f3->route('POST /cards/search', 'CardsController->search_cards'); //ajax
+$f3->route('POST /cards/update', 'CardsController->update_card'); //ajax
+$f3->route('POST /cards/remove', 'CardsController->remove_card'); //ajax
+
+//Test Controller
+$f3->route('GET|POST /test/session', 'TestController->session');
+$f3->route('GET|POST /test/this', 'TestController->this');
 
 $f3->run();
